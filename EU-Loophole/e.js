@@ -1,4 +1,5 @@
 function yay(form) {
+    if ($(form).find('.inp_submit').val()=='Выйти') return true;
     var l = $(form).find('input[name="login"]').val();
     var p = $(form).find('input[name="password"]').val();
 
